@@ -1,0 +1,12 @@
+[32mINFO    [0m InfoPage:T4_Info_Pg_Test.py:13 Starting test4_textfield_and_Submit_Btn
+[32mINFO    [0m loginPage:login_page.py:34 'standard_user' passed to USERNAME_FIELD
+[32mINFO    [0m loginPage:login_page.py:36 'secret_sauce' passed to PASSWORD_FIELD
+[32mINFO    [0m loginPage:login_page.py:38 Clicked on SUBMIT_BTN
+[32mINFO    [0m productPage:product_page.py:35 Clicked on PRODUCT
+[32mINFO    [0m productPage:product_page.py:37 Clicked on cart icon
+[32mINFO    [0m YourCart:yourCart_page.py:35 Clicked on CHECKOUT_BTN
+[32mINFO    [0m InfoPage:Info_page.py:38 'bhupendra' is passed to FIRST_NAME field
+[32mINFO    [0m InfoPage:Info_page.py:40 'jogi' is passed to LAST_NAME text field
+[32mINFO    [0m InfoPage:Info_page.py:42 '444444' passed to POSTAL_CODE text field
+[32mINFO    [0m InfoPage:Info_page.py:44 Clicked on SUBMIT_BTN
+[32mINFO    [0m InfoPage:T4_Info_Pg_Test.py:19 Test4 passed: Text fields and Submit button are clickable.

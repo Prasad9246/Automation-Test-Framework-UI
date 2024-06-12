@@ -1,0 +1,5 @@
+2024-05-15 17:54:13,997 - YourCart - INFO - Starting test3_Checkout_Btn
+2024-05-15 17:54:14,745 - YourCart - INFO - Clicked on CHECKOUT_BTN
+2024-05-15 17:54:14,768 - YourCart - INFO - Test3 passed: Checkout button is clickable.
+2024-05-15 17:54:24,100 - YourCart - INFO - Clicked on CHECKOUT_BTN
+2024-05-15 17:54:33,820 - YourCart - INFO - Clicked on CHECKOUT_BTN

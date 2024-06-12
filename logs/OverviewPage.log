@@ -1,0 +1,3 @@
+2024-05-15 17:54:33,229 - OverviewPage - INFO - Starting test5_Finish_Btn_IsClickable
+2024-05-15 17:54:34,215 - OverviewPage - INFO - Clicked on FINISH_BTN
+2024-05-15 17:54:34,231 - OverviewPage - INFO - Test5 passed: Finish button is clickable.

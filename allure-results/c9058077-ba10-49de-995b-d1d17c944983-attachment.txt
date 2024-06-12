@@ -1,0 +1,7 @@
+[32mINFO    [0m productPage:T2_Product_Pg_Test.py:12 Starting test2_cart_icon_is_clickable
+[32mINFO    [0m loginPage:login_page.py:34 'standard_user' passed to USERNAME_FIELD
+[32mINFO    [0m loginPage:login_page.py:36 'secret_sauce' passed to PASSWORD_FIELD
+[32mINFO    [0m loginPage:login_page.py:38 Clicked on SUBMIT_BTN
+[32mINFO    [0m productPage:product_page.py:35 Clicked on PRODUCT
+[32mINFO    [0m productPage:product_page.py:37 Clicked on cart icon
+[32mINFO    [0m productPage:T2_Product_Pg_Test.py:18 Test2 passed: cart icon is clickable.

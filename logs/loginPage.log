@@ -1,0 +1,17 @@
+2024-05-15 17:53:55,097 - loginPage - INFO - Starting test1_Login_Btn_IsClickable
+2024-05-15 17:53:55,313 - loginPage - INFO - 'standard_user' passed to USERNAME_FIELD
+2024-05-15 17:53:55,496 - loginPage - INFO - 'secret_sauce' passed to PASSWORD_FIELD
+2024-05-15 17:53:55,685 - loginPage - INFO - Clicked on SUBMIT_BTN
+2024-05-15 17:53:55,708 - loginPage - INFO - Test1 passed: Login button is clickable.
+2024-05-15 17:54:04,773 - loginPage - INFO - 'standard_user' passed to USERNAME_FIELD
+2024-05-15 17:54:04,911 - loginPage - INFO - 'secret_sauce' passed to PASSWORD_FIELD
+2024-05-15 17:54:05,026 - loginPage - INFO - Clicked on SUBMIT_BTN
+2024-05-15 17:54:14,147 - loginPage - INFO - 'standard_user' passed to USERNAME_FIELD
+2024-05-15 17:54:14,258 - loginPage - INFO - 'secret_sauce' passed to PASSWORD_FIELD
+2024-05-15 17:54:14,374 - loginPage - INFO - Clicked on SUBMIT_BTN
+2024-05-15 17:54:23,619 - loginPage - INFO - 'standard_user' passed to USERNAME_FIELD
+2024-05-15 17:54:23,729 - loginPage - INFO - 'secret_sauce' passed to PASSWORD_FIELD
+2024-05-15 17:54:23,835 - loginPage - INFO - Clicked on SUBMIT_BTN
+2024-05-15 17:54:33,347 - loginPage - INFO - 'standard_user' passed to USERNAME_FIELD
+2024-05-15 17:54:33,453 - loginPage - INFO - 'secret_sauce' passed to PASSWORD_FIELD
+2024-05-15 17:54:33,560 - loginPage - INFO - Clicked on SUBMIT_BTN

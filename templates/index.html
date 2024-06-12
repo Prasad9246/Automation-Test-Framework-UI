@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pytest Framework Runner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .wrapper {
+            height: 100%;
+            width: 100%;
+            background-color: #0066cc;
+            position: absolute;
+        }
+
+        .wrapper div {
+            height: 60px;
+            width: 60px;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            border-radius: 100px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            animation: animate 4s linear infinite;
+        }
+
+        .wrapper div span.dot {
+            height: 5px;
+            width: 5px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            top: 20%;
+            right: 20%;
+        }
+
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+
+        .wrapper div:nth-child(2) {
+            top: 20%;
+            left: 20%;
+            animation: animate 8s linear infinite;
+        }
+
+        .wrapper div:nth-child(3) {
+            top: 60%;
+            left: 80%;
+            animation: animate 10s linear infinite;
+        }
+
+        .wrapper div:nth-child(4) {
+            top: 40%;
+            left: 40%;
+            animation: animate 3s linear infinite;
+        }
+
+        .wrapper div:nth-child(5) {
+            top: 66%;
+            left: 30%;
+            animation: animate 7s linear infinite;
+        }
+
+        .wrapper div:nth-child(6) {
+            top: 90%;
+            left: 10%;
+            animation: animate 9s linear infinite;
+        }
+
+        .wrapper div:nth-child(7) {
+            top: 30%;
+            left: 60%;
+            animation: animate 5s linear infinite;
+        }
+
+        .wrapper div:nth-child(8) {
+            top: 70%;
+            left: 20%;
+            animation: animate 8s linear infinite;
+        }
+
+        .wrapper div:nth-child(9) {
+            top: 75%;
+            left: 60%;
+            animation: animate 10s linear infinite;
+        }
+
+        .wrapper div:nth-child(10) {
+            top: 50%;
+            left: 50%;
+            animation: animate 6s linear infinite;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .report-link {
+            display: block;
+            margin-top: 20px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .report-link:hover {
+            text-decoration: underline;
+        }
+
+        .container ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        .container ul li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        .container ul li:last-child {
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        .container ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+    </div>
+
+    <div class="container">
+        <h1>Run Pytest Framework</h1>
+        <label for="testType">Select Test Type:</label>
+        <select id="testType">
+            <option value="all">All Tests</option>
+            <option value="login">Login Page Test</option>
+            <option value="product">Product Page Test</option>
+            <option value="cart">Cart Page Test</option>
+            <option value="info">Info Page Test</option>
+            <option value="overview">Overview Page Test</option>
+            <option value="allure">Run with Allure Report</option>
+        </select>
+        <br><br>
+        <button onclick="runPytest()">Run Pytest Framework</button>
+        <button onclick="startAllureServer()">Start Allure Server</button>
+    </div>
+
+    <script>
+        function runPytest() {
+            var testType = document.getElementById("testType").value;
+            var url = 'http://127.0.0.1:5000/run_pytest';
+            if (testType !== "all") {
+                url += '?type=' + testType;
+            }
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert(data.message);
+                    } else {
+                        alert('Error: ' + data.message);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function startAllureServer() {
+            fetch('http://127.0.0.1:5000/start_allure')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert(data.message);
+                    } else {
+                        alert('Error: ' + data.message);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        function displayLogFiles() {
+            fetch('http://127.0.0.1:5000/logs')
+                .then(response => response.json())
+                .then(data => {
+                    const container = document.querySelector('.container');
+                    const logList = document.createElement('ul');
+
+                    data.forEach((filename, index) => {
+                        const logItem = document.createElement('li');
+                        const logLink = document.createElement('a');
+                        logLink.href = `/logs/${filename}`;
+                        logLink.textContent = filename;
+                        logItem.appendChild(logLink);
+                        if (index === data.length - 1) {
+                            logItem.style.fontWeight = 'bold';
+                            logItem.style.color = '#FF0000';
+                        }
+                        logList.appendChild(logItem);
+                    });
+
+                    container.appendChild(logList);
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        window.onload = displayLogFiles;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+[32mINFO    [0m YourCart:T3_YourCart_Pg_Test.py:11 Starting test3_Checkout_Btn
+[32mINFO    [0m loginPage:login_page.py:34 'standard_user' passed to USERNAME_FIELD
+[32mINFO    [0m loginPage:login_page.py:36 'secret_sauce' passed to PASSWORD_FIELD
+[32mINFO    [0m loginPage:login_page.py:38 Clicked on SUBMIT_BTN
+[32mINFO    [0m productPage:product_page.py:35 Clicked on PRODUCT
+[32mINFO    [0m productPage:product_page.py:37 Clicked on cart icon
+[32mINFO    [0m YourCart:yourCart_page.py:35 Clicked on CHECKOUT_BTN
+[32mINFO    [0m YourCart:T3_YourCart_Pg_Test.py:17 Test3 passed: Checkout button is clickable.

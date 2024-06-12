@@ -1,0 +1,10 @@
+2024-05-15 17:54:23,494 - InfoPage - INFO - Starting test4_textfield_and_Submit_Btn
+2024-05-15 17:54:24,227 - InfoPage - INFO - 'bhupendra' is passed to FIRST_NAME field
+2024-05-15 17:54:24,311 - InfoPage - INFO - 'jogi' is passed to LAST_NAME text field
+2024-05-15 17:54:24,380 - InfoPage - INFO - '444444' passed to POSTAL_CODE text field
+2024-05-15 17:54:24,481 - InfoPage - INFO - Clicked on SUBMIT_BTN
+2024-05-15 17:54:24,496 - InfoPage - INFO - Test4 passed: Text fields and Submit button are clickable.
+2024-05-15 17:54:33,899 - InfoPage - INFO - 'PK' is passed to FIRST_NAME field
+2024-05-15 17:54:33,992 - InfoPage - INFO - 'KD' is passed to LAST_NAME text field
+2024-05-15 17:54:34,065 - InfoPage - INFO - '789' passed to POSTAL_CODE text field
+2024-05-15 17:54:34,129 - InfoPage - INFO - Clicked on SUBMIT_BTN

@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 15 17:01:23 IST 2024","Wed May 15 17:01:24 IST 2024","563","testcases","T1_Login_Pg_Test","TestLogin","","","test1_Login_Btn_IsClickable[test_data0]",""
+"passed","Wed May 15 17:01:43 IST 2024","Wed May 15 17:01:44 IST 2024","782","testcases","T3_YourCart_Pg_Test","TestCartPage","","","test3_Checkout_Btn",""
+"passed","Wed May 15 17:01:53 IST 2024","Wed May 15 17:01:54 IST 2024","1376","testcases","T4_Info_Pg_Test","TestInfoPage","","","test4_textfield_and_Submit_Btn[test_data0]",""
+"passed","Wed May 15 17:02:05 IST 2024","Wed May 15 17:02:06 IST 2024","1251","testcases","T5_CkOverview_Pg_Test","Test_CheckoutOverview_page","","","test5_Finish_Btn_IsClickable",""
+"passed","Wed May 15 17:01:33 IST 2024","Wed May 15 17:01:34 IST 2024","649","testcases","T2_Product_Pg_Test","TestProductPage","","","test2_cart_icon_is_clickable",""

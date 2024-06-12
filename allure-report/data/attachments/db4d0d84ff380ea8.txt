@@ -1,0 +1,5 @@
+[32mINFO    [0m loginPage:T1_Login_Pg_Test.py:14 Starting test1_Login_Btn_IsClickable
+[32mINFO    [0m loginPage:login_page.py:34 'standard_user' passed to USERNAME_FIELD
+[32mINFO    [0m loginPage:login_page.py:36 'secret_sauce' passed to PASSWORD_FIELD
+[32mINFO    [0m loginPage:login_page.py:38 Clicked on SUBMIT_BTN
+[32mINFO    [0m loginPage:T1_Login_Pg_Test.py:21 Test1 passed: Login button is clickable.

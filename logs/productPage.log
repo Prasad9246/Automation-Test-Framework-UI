@@ -1,0 +1,10 @@
+2024-05-15 17:54:04,641 - productPage - INFO - Starting test2_cart_icon_is_clickable
+2024-05-15 17:54:05,161 - productPage - INFO - Clicked on PRODUCT
+2024-05-15 17:54:05,230 - productPage - INFO - Clicked on cart icon
+2024-05-15 17:54:05,250 - productPage - INFO - Test2 passed: cart icon is clickable.
+2024-05-15 17:54:14,516 - productPage - INFO - Clicked on PRODUCT
+2024-05-15 17:54:14,643 - productPage - INFO - Clicked on cart icon
+2024-05-15 17:54:23,946 - productPage - INFO - Clicked on PRODUCT
+2024-05-15 17:54:24,033 - productPage - INFO - Clicked on cart icon
+2024-05-15 17:54:33,676 - productPage - INFO - Clicked on PRODUCT
+2024-05-15 17:54:33,749 - productPage - INFO - Clicked on cart icon
